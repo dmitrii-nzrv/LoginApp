@@ -127,8 +127,13 @@
                                         <buttonConfiguration key="configuration" style="plain" title="LOGIN">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                         </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="yAF-s2-INZ" kind="show" id="ejq-le-7fi"/>
+                                            <action selector="loginBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caq-px-gQp"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -149,6 +154,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Sign up here">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="signUpBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nax-DL-ZTA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -175,6 +183,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XS7-58-qBy"/>
+                    <connections>
+                        <outlet property="emailLineView" destination="uF7-c9-LH8" id="Lo7-eZ-hPR"/>
+                        <outlet property="emailTextField" destination="D2d-1A-fjg" id="1Fr-g4-6nw"/>
+                        <outlet property="envelopImageView" destination="nD9-Jq-sIr" id="fGX-uS-jyL"/>
+                        <outlet property="lockImageView" destination="Kxq-rQ-Sqq" id="lJ3-7A-FAH"/>
+                        <outlet property="loginBtn" destination="UME-3e-066" id="B6H-G3-1Tk"/>
+                        <outlet property="passwordLineView" destination="eWE-Qb-irR" id="cEQ-jI-HMp"/>
+                        <outlet property="passwordTextField" destination="Ioa-pI-o7U" id="5Mb-Jk-sPa"/>
+                        <outlet property="signUpLabel" destination="crZ-zw-fv2" id="Eml-y5-pNA"/>
+                        <segue destination="yAF-s2-INZ" kind="show" identifier="goToHomePage" id="k7c-De-sBj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,16 +242,16 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
